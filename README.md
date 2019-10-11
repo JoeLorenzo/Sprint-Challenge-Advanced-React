@@ -23,8 +23,26 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+
+  You might want to use class components when you are using legacy code.
+
+  You might opt to use class components when you have know the component you will render is updating something.  
+
+
 - [ ] Name three lifecycle methods and their purposes.
+
+componentDidMount is called in the initial creation phase of the component. any initial state values should be set in the constructor.  
+
+shouldComponentUpdate is called after the componentDidMount phase when we could use it to change initial component values like useState.  
+
+ componentWillUnmount is the last phase of the react lifecycle and works as a useEffect hook.  
+
+
 - [ ] What is the purpose of a custom hook?
+
+They can make our code dry and reusable.  
+
+
 - [ ] Why is it important to test our apps?
 
 ## Project Set Up
