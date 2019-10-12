@@ -45,6 +45,8 @@ They can make our code dry and reusable.
 
 - [ ] Why is it important to test our apps?
 
+for things like data validation, common error log, save us time from having to continually debug our code through the browser console. 
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
