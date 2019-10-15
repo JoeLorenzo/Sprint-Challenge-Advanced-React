@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import './ApiCall.scss'
+
 import Player from './Player'
 class ApiCall extends Component {
   constructor() {
@@ -8,22 +8,15 @@ class ApiCall extends Component {
 
     // set some initial/default state values
     this.state = {
-      id: '',
-      name: '',
-      country: '',
-      searches: ''
+      playerInfo:[]
     }
   }
 
   componentDidMount() {
     axios.get('http://localhost:5000/api/players')
       .then(result => {
-        console.log(result.data)
         this.setState({
-          id: result.data.id,
-          name: result.data.name,
-          country: result.data.country,
-          searches: result.data.searches,
+          playerInfo:result.data,
         })
       })
       .catch(error => {
@@ -31,12 +24,17 @@ class ApiCall extends Component {
       })
   }
 
-
   render() {
-    return (
-    <Player />
+    return(
+      <div>
+      {this.state.playerInfo.map(player =>
+        <Player info={player} />
+      )}
+      </div>
     )
-  }
+
+
+    }
 }
 
 export default ApiCall
