@@ -1,21 +1,18 @@
 import { useEffect } from 'react'
 import { useLocalStorage } from '../hooks/useLocalStorage'
-
 import React, { useState } from 'react'
 
 export function useOnline() {
   const [val, setVal] = useLocalStorage('val', false);
-console.log(val)
+  console.log(val)
 
-
-    useEffect(() => {
-
+  useEffect(() => {
     }, [val])
 
-     const handleToggle = () => {
+  const handleToggle = () => {
     setVal(!val)
     console.log(val)
    }
 
-    return [val, handleToggle]
-  }
+  return [val, handleToggle]
+}

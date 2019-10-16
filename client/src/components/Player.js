@@ -25,8 +25,7 @@ import './Player.scss'
             </div>
           </div>
       </div>
-)
-}
+)}
 
 
 export default Player
