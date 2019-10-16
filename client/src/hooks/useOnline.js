@@ -9,9 +9,7 @@ console.log(val)
 
 
     useEffect(() => {
-      val
-        ? document.body.classList.add('dark-mode')
-        : document.body.classList.remove('dark-mode')
+
     }, [val])
 
      const handleToggle = () => {
@@ -19,6 +17,5 @@ console.log(val)
     console.log(val)
    }
 
-    // return the destructured array
     return [val, handleToggle]
   }

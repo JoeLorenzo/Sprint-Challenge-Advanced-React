@@ -9,10 +9,9 @@ function Online(){
 
 
     return(
-      <div class={`${val}`}>
+      <div data-testid="toggle_class" class={`${val}`}>
       <button class="buttons" onClick={handleToggle}>Online </button>
       <div class="ring-container">
-
           <div class="ringring"></div>
           <div class="circle"></div>
         </div>

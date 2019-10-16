@@ -3,7 +3,7 @@ import './App.scss';
 import ApiCall from './components/ApiCall'
 function App() {
   return (
-    <div className="Apps">
+    <div data-testid="app_test_id" className="App">
       <header className="App-header">
           <ApiCall />
       </header>

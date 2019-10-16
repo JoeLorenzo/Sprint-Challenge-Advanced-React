@@ -13,7 +13,7 @@ import './Player.scss'
     searches
   } = props.info;
     return(
-      <div className={`Player_card_${id}`}>
+      <div data-testid="card_id" className={`Player_card_${id}`}>
           <div class="container">
             <div class="card">
                <div class="card__content">
